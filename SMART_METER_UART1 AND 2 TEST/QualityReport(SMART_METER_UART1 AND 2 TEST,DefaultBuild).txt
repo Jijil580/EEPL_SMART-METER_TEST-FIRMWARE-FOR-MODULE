@@ -1,13 +1,59 @@
 QualityReport
-24 October 2024 15:25:30
+25 October 2024 12:12:47
 
 ------ Start build(SMART_METER_UART1 AND 2 TEST, DefaultBuild) ------
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.14.00\Bin\ccrl.exe cg_src\r_cg_sau.c -cpu=S3 -o DefaultBuild\r_cg_sau.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10NPJ.DVF" -g -g_line -I cg_src -I . -c -msg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.14.00\Bin\ccrl.exe cstart.asm -cpu=S3 -o DefaultBuild\cstart.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10NPJ.DVF" -g -c -msg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.14.00\Bin\ccrl.exe stkinit.asm -cpu=S3 -o DefaultBuild\stkinit.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10NPJ.DVF" -g -c -msg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.14.00\Bin\rlink.exe "-subcommand=DefaultBuild\SMART_METER_UART1 AND 2 TEST.clnk"
+Renesas Optimizing Linker Completed
 ------ Build ended(Error:0, Warning:0)(SMART_METER_UART1 AND 2 TEST, DefaultBuild) ------
+
+--- CommandFile 1 ---
+DefaultBuild\SMART_METER_UART1 AND 2 TEST.clnk :
+-Input=DefaultBuild\cstart.obj
+-Input=DefaultBuild\stkinit.obj
+-Input=DefaultBuild\r_cg_main.obj
+-Input=DefaultBuild\r_cg_systeminit.obj
+-Input=DefaultBuild\r_cg_cgc.obj
+-Input=DefaultBuild\r_cg_cgc_user.obj
+-Input=DefaultBuild\r_cg_port.obj
+-Input=DefaultBuild\r_cg_port_user.obj
+-Input=DefaultBuild\r_cg_wdt.obj
+-Input=DefaultBuild\r_cg_wdt_user.obj
+-Input=DefaultBuild\r_cg_sau.obj
+-Input=DefaultBuild\r_cg_sau_user.obj
+-SECURITY_ID=00000000000000000000
+-DEVICE=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10NPJ.DVF
+-DEBug
+-NOCOmpress
+-NOOPtimize
+-OUtput=DefaultBuild\SMART_METER_UART1 AND 2 TEST.abs
+-OCDBG=84
+-DEBUG_MONITOR=3FE00-3FFFF
+-USER_OPT_BYTE=FFFFE0
+-OCDTR
+-LISt=DefaultBuild\SMART_METER_UART1 AND 2 TEST.map
+-SHow=SYmbol,Total_size
+-AUTO_SECTION_LAYOUT
+-ROm=.data=.dataR
+-ROm=.sdata=.sdataR
+-NOMessage
+-MEMory=High
+-NOLOgo
+-LIBrary="DefaultBuild\SMART_METER_UART1 AND 2 TEST.lib"
+-end
+-Input="DefaultBuild\SMART_METER_UART1 AND 2 TEST.abs"
+-DEVICE=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10NPJ.DVF
+-OUtput=DefaultBuild\SMART_METER_UART1 AND 2 TEST.mot
+-FOrm=Stype
+-NOMessage
+-exit
 
 
 --- SHA1 hash value of output files ---
-D:\JIJIL EPPL\METER WITH MODULE TEST\15TH OCTOBER\SMART_METER_UART1 AND 2 TEST\DefaultBuild\SMART_METER_UART1 AND 2 TEST.abs: d93f4aa9466cadbb27f12094d7038eb82dd9a7f4
-D:\JIJIL EPPL\METER WITH MODULE TEST\15TH OCTOBER\SMART_METER_UART1 AND 2 TEST\DefaultBuild\SMART_METER_UART1 AND 2 TEST.mot: a895c9c438897a28e2800fab3fc5c1a3fe72309c
+D:\JIJIL EPPL\PROJECTS\EEPL_SMART-METER_TEST-FIRMWARE-FOR-MODULE\SMART_METER_UART1 AND 2 TEST\DefaultBuild\SMART_METER_UART1 AND 2 TEST.abs: 81c3e6edb18f7b7843e796934a7f3bdf670934f8
+D:\JIJIL EPPL\PROJECTS\EEPL_SMART-METER_TEST-FIRMWARE-FOR-MODULE\SMART_METER_UART1 AND 2 TEST\DefaultBuild\SMART_METER_UART1 AND 2 TEST.mot: a6aa5e294f9958b2977d3a1c796a8d77cb215b85
 
 
 --- System Information ---
@@ -33,11 +79,11 @@ D:\JIJIL EPPL\METER WITH MODULE TEST\15TH OCTOBER\SMART_METER_UART1 AND 2 TEST\D
  C:\Program Files (x86)\Renesas Electronics\CS+\CC
 *Memory Usage
  *Private Working Set
-  441 MB
+  438 MB
  *Number of GDI Objects
-  2410
+  2391
  *Number of USER Objects
-  1543
+  1504
  *Opened Files
   16 editors, 16 files, 138 KB
 
@@ -175,7 +221,7 @@ Device Information Common Interface
   DeviceInformation.dll
 
 --- Main Project Information ---
-D:\JIJIL EPPL\METER WITH MODULE TEST\15TH OCTOBER\SMART_METER_UART1 AND 2 TEST\SMART_METER_UART1 AND 2 TEST.mtpj
+D:\JIJIL EPPL\PROJECTS\EEPL_SMART-METER_TEST-FIRMWARE-FOR-MODULE\SMART_METER_UART1 AND 2 TEST\SMART_METER_UART1 AND 2 TEST.mtpj
 Microcontroller Information
  *R5F10NPJ
   *File Name: Version

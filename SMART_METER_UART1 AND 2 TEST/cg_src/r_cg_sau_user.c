@@ -61,7 +61,7 @@ extern volatile uint16_t  g_uart2_rx_count;            /* uart2 receive data num
 extern volatile uint16_t  g_uart2_rx_length;           /* uart2 receive data length */
 /* Start user code for global. Do not edit comment generated here */
 /* End user code. Do not edit comment generated here */
-int i=1;
+uint8_t i=0;
 
 uint8_t  RX2_BUFFER[100];
  uint8_t RX2_BUFFER_COUNT=0;
